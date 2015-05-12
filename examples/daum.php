@@ -38,15 +38,15 @@ if (!empty($_GET['code'])) {
     $token = $daumService->requestAccessToken($_GET['code']);
 
     // Send a request with it
-    $result = json_decode($daumService->request('/user/v1/show'));
+    $json = json_decode($daumService->request('/user/v1/show'));
 
     // Show the resultant data
-    if ((string)$result->code === '200') {
-        foreach ($result->result as $key => $value) {
+    if ((string)$json->code === '200') {
+        foreach ($json->result as $key => $value) {
             echo "[$key] $value", PHP_EOL;
         }
     } else {
-        echo "[{$result->code}] {$result->message}", PHP_EOL;
+        echo "[{$json->code}] {$json->message}", PHP_EOL;
     }
 } elseif (!empty($_GET['go']) && $_GET['go'] === 'go') {
     $url = $daumService->getAuthorizationUri();
