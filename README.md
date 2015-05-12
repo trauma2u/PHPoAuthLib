@@ -10,7 +10,7 @@ Installation
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com//trauma2u/PHPoAuthLib"
+            "url": "https://github.com/trauma2u/PHPoAuthLib"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@ Installation
 }
 ```
 
-Added Korean services
+Added Korean Services
 ---------------------
 - Daum
 - Naver
