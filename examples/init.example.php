@@ -39,6 +39,10 @@ $servicesCredentials = array(
         'key'       => '',
         'secret'    => '',
     ),
+    'daum' => array(
+        'key'       => '',
+        'secret'    => '',
+    ),
     'dropbox' => array(
         'key'       => '',
         'secret'    => '',
@@ -84,6 +88,10 @@ $servicesCredentials = array(
         'secret'    => '',
     ),
     'microsoft' => array(
+        'key'       => '',
+        'secret'    => '',
+    ),
+    'naver' => array(
         'key'       => '',
         'secret'    => '',
     ),
