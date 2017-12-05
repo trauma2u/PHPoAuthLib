@@ -47,9 +47,10 @@ $servicesCredentials = array(
         'key'       => '',
         'secret'    => '',
     ),
-<<<<<<< HEAD
     'daum' => array(
-=======
+        'key'       => '',
+        'secret'    => '',
+    ),
     'delicious' => array(
         'key'       => '',
         'secret'    => '',
@@ -59,7 +60,6 @@ $servicesCredentials = array(
         'secret'    => '',
     ),
     'deviantart' => array(
->>>>>>> Lusitanian/master
         'key'       => '',
         'secret'    => '',
     ),
@@ -123,9 +123,10 @@ $servicesCredentials = array(
         'key'       => '',
         'secret'    => '',
     ),
-<<<<<<< HEAD
     'naver' => array(
-=======
+        'key'       => '',
+        'secret'    => '',
+    ),
     'mondo' => array(
         'key'       => '',
         'secret'    => '',
@@ -139,7 +140,6 @@ $servicesCredentials = array(
         'secret'    => '',
     ),
     'parrotFlowerPower' => array(
->>>>>>> Lusitanian/master
         'key'       => '',
         'secret'    => '',
     ),
