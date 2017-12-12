@@ -22,4 +22,5 @@ Installation
 Added Korean Services
 ---------------------
 - Daum
+- Kakao
 - Naver
