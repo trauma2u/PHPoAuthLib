@@ -8,18 +8,17 @@ use OAuth\Common\Http\Uri\Uri;
 use OAuth\Common\Consumer\CredentialsInterface;
 use OAuth\Common\Http\Client\ClientInterface;
 use OAuth\Common\Storage\TokenStorageInterface;
-use OAuth\Common\Http\Uri\UriInterface;
 
 class Naver extends AbstractService
 {
+    const OAUTH_URL = 'https://nid.naver.com';
+
     public function __construct(
         CredentialsInterface $credentials,
         ClientInterface $httpClient,
-        TokenStorageInterface $storage,
-        $scopes = array(),
-        UriInterface $baseApiUri = null
+        TokenStorageInterface $storage
     ) {
-        parent::__construct($credentials, $httpClient, $storage, $scopes, $baseApiUri);
+        parent::__construct($credentials, $httpClient, $storage, [], null, true);
     }
 
     /**
@@ -27,7 +26,7 @@ class Naver extends AbstractService
      */
     public function getAuthorizationEndpoint()
     {
-        return new Uri('https://nid.naver.com/oauth2.0/authorize');
+        return new Uri(self::OAUTH_URL.'/oauth2.0/authorize');
     }
 
     /**
@@ -35,7 +34,7 @@ class Naver extends AbstractService
      */
     public function getAccessTokenEndpoint()
     {
-        return new Uri('https://nid.naver.com/oauth2.0/token');
+        return new Uri(self::OAUTH_URL.'/oauth2.0/token');
     }
 
     /**

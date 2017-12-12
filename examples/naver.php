@@ -31,11 +31,14 @@ $credentials = new Credentials(
 
 // Instantiate the Naver service using the credentials, http client and storage mechanism for the token
 /** @var $naverService Naver */
-$naverService = $serviceFactory->createService('naver', $credentials, $storage, []);
+$naverService = $serviceFactory->createService('naver', $credentials, $storage);
 
 if (!empty($_GET['code'])) {
+    // retrieve the CSRF state parameter
+    $state = isset($_GET['state']) ? $_GET['state'] : null;
+
     // This was a callback request from naver, get the token
-    $token = $naverService->requestAccessToken($_GET['code']);
+    $token = $naverService->requestAccessToken($_GET['code'], $state);
 
     // Send a request with it
     try {
