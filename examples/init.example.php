@@ -111,6 +111,10 @@ $servicesCredentials = array(
         'key'       => '',
         'secret'    => '',
     ),
+    'kakao' => array(
+        'key'       => '',
+        'secret'    => '',
+    ),
     'linkedin' => array(
         'key'       => '',
         'secret'    => '',
