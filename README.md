@@ -50,12 +50,12 @@ $storage = new OAuth\Common\Storage\Session();
 
 // service
 $serviceFactory = new OAuth\ServiceFactory();
-/** @var $naverService Naver */
+/** @var $naverService OAuth\OAuth2\Service\Naver */
 $naverService = $serviceFactory->createService('naver', $credentials, $storage);
 ```
 /oauth/login.php
 ```html
-<a href="/auth/authorize.php">Login with Naver</a>
+<a href="/auth/authorize.php">Login with Naver!</a>
 ```
 /oauth/authorize.php
 ```php
