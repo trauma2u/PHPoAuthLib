@@ -1,4 +1,4 @@
-PHPoAuthLib
+PHPoAuthLib(KR)
 ===========
 The Forked Project of [Lusitanian/PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib) for Korean Services
 
