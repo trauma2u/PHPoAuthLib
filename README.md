@@ -55,7 +55,7 @@ $naverService = $serviceFactory->createService('naver', $credentials, $storage);
 ```
 /oauth/login.php
 ```html
-<a href="/auth/authorize.php">Login with Naver!</a>
+<a href="/oauth/authorize.php">Login with Naver!</a>
 ```
 /oauth/authorize.php
 ```php
