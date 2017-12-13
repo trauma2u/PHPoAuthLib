@@ -80,3 +80,7 @@ $token = $naverService->requestAccessToken($code, $state);
 $response = $naverService->request('/do/something');
 $data = json_decode($response);
 ```
+
+Extensions
+---------------------
+- [trauma2u/PHPoAuthUserData](https://github.com/trauma2u/PHPoAuthUserData)
