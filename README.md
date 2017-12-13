@@ -69,7 +69,7 @@ header("Location: $url");
 ```php
 $code = isset($_GET['code']) ? $_GET['code'] : null;
 $state = isset($_GET['state']) ? $_GET['state'] : null;
-if (!$code) header('Location: /oauth/login.php');
+if (!$code) throw new \OAuth\Common\Exception\Exception();
 
 require('naver.php');
 
